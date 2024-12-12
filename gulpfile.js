@@ -33,5 +33,4 @@ exports.default = function () {
   browserSyncTask()
   gulp.watch('./src/**/*.scss', gulp.series(buildStyles, browserSyncReload))
   gulp.watch('./src/*.html', gulp.series(inlining, browserSyncReload))
-
 };
